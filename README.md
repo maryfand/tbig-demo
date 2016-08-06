@@ -15,6 +15,6 @@ npm i -D react babel-core babel-loader  babel-preset-es2015 babel-preset-react b
 ```
 import React, { Component } from 'react';
 ```
-
+d
 why: http://haoduoshipin.com/v/179
 f
