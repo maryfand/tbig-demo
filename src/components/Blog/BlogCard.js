@@ -19,6 +19,7 @@ class BlogCard extends Component {
         lineHeight:'100px'
       },
       content:{
+        margin:'20px',
         float:'left',
         color:'#777',
         paddingLeft:'10px'
@@ -38,7 +39,7 @@ class BlogCard extends Component {
 
 BlogCard.propTypes = {
   title: React.PropTypes.string.isRequired,
-  index: React.PropTypes.string.isRequired,
+  index: React.PropTypes.number.isRequired,
   date: React.PropTypes.string.isRequired,
 };
 

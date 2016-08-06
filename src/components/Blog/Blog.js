@@ -14,7 +14,7 @@ class Blog extends Component {
 
   componentDidMount(){
     // use math random to avoid browser cache
-    let address = `https://raw.githubusercontent.com/happypeter/big-demo/master/posts/index.json`
+    let address = `https://raw.githubusercontent.com/maryfand/tbig-demo/master/posts/index.json`
     axios.get(address).then((res) => {
       console.log(res);
       console.log(address);
