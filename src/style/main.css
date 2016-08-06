@@ -2,7 +2,10 @@ html {
   font-family: sans-serif;
   background-color: #fafafa;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
