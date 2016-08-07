@@ -6,6 +6,7 @@ import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import Blog from './components/Blog/Blog';
 import Post from './components/Blog/Post';
+import Search from './components/Blog/Search';
 
 
 

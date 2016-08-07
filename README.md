@@ -17,3 +17,8 @@ import React, { Component } from 'react';
 ```
 
 why: http://haoduoshipin.com/v/179
+
+改变样式(title)
+
+怎样不提交密码
+在git 克隆里 用ssh
