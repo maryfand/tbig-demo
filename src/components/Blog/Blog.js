@@ -16,10 +16,9 @@ class Blog extends Component {
 
   componentDidMount(){
     // use math random to avoid browser cache
-    let address = `https://raw.githubusercontent.com/maryfand/tbig-demo/master/posts/index.json`
+    let address = `https://raw.githubusercontent.com/maryfand/tbig-demo/master/posts/index.json?v=${Math.random()}`
     axios.get(address).then((res) => {
-      console.log(res);
-      console.log(address);
+
       this.setState({
         posts: res.data,
         wait:false
@@ -34,19 +33,17 @@ class Blog extends Component {
         margin:'30px auto'
       }
     };
-    // console.log(Cards.length);
     var blogCards = [];
     map((b) =>  {
-                  blogCards.push(
-                    <BlogCard title={b.title} date={b.created_at } index={b.id} key={Math.random()}/>
-                  );
-                },
-        this.state.posts
+        blogCards.push(
+          <BlogCard title={b.title} date={b.created_at } index={b.id} url={b.name} url={b.name} key={Math.random()} key={Math.random()}/>
+        );
+      },
+      this.state.posts
     );
-    // console.log(AllCards);
     return(
       <div>
-      {this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
+        {this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
         {blogCards}
       </div>
     )

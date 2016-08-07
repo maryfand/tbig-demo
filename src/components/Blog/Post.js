@@ -12,7 +12,7 @@ class Post extends Component {
   }
   componentDidMount(){
    // use math random to avoid browser cache
-   let address = `https://raw.githubusercontent.com/maryfand/tbig-demo/master/posts/git-tips.md?v=${Math.random()}`
+   let address = `https://raw.githubusercontent.com/maryfand/tbig-demo/master/posts/${this.props.params.title}.md?v=${Math.random()}`
    axios.get(address).then((res) => {
      console.log(res);
      console.log(address);
@@ -31,8 +31,8 @@ class Post extends Component {
    let content = marked(this.state.rawContent!='' ? this.state.rawContent : '请稍等......' );
     return(
       <div>
-        { this.props.params.title }
         { content }
+        <div dangerouslySetInnerHTML={{__html: content }} />
       </div>
     )
   }
