@@ -6,7 +6,7 @@
  [baidu.com](baidu.com)
 
 ```js
-git init
-git add -A
-git commit -a -m"first"
+import Header from './Header/Header';
+import Footer from './Footer';
+
 ```
