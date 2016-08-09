@@ -25,3 +25,6 @@ why: http://haoduoshipin.com/v/179
 ssh-keygen
 
 atom config
+
+更新日志时应上传github
+浏览器自动清缓存
