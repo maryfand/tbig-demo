@@ -4,6 +4,7 @@ import isEmpty from 'lodash/isEmpty';
 import UserInfo from './UserInfo';
 import Repos from './Repos';
 import github from './github';
+import Echarts from '../Echarts';
 
 
 class GithubAccount extends Component {
@@ -41,6 +42,7 @@ class GithubAccount extends Component {
         <Card className="content">
           {this.state.wait ? <p>Reading Data from Github...</p> : ''}
           { GitHubInfo }
+          <Echarts/>
         </Card>
       </div>
     )

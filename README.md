@@ -22,3 +22,6 @@ why: http://haoduoshipin.com/v/179
 
 怎样不提交密码
 在git 克隆里 用ssh
+ssh-keygen
+
+atom config
