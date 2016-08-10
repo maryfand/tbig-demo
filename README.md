@@ -28,3 +28,18 @@ atom config
 
 更新日志时应上传github
 浏览器自动清缓存
+
+
+高亮设置cd
+在post.js里
+# import hljs from 'highlight.js';
+
+## render{
+  marked.setOptions({
+    highlight: function (code) {
+      return hljs.highlightAuto(code).value;
+    }
+    });
+  }
+### 增加default.css
+在node_modules里>highlight里
