@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Works from './Works';
 
 class Home extends React.Component {
   render () {
@@ -32,6 +33,7 @@ class Home extends React.Component {
           </div>
         </div>
         <h1 style={{color:'#777',textAlign:'center',lineHeight:'90px'}}>我的个人作品</h1>
+        < Works />
       </div>
     )
   }

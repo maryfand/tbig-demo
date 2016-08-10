@@ -3,6 +3,7 @@ import axios from 'axios';
 import marked from 'marked';
 import hljs from 'highlight.js';
 
+
 class Post extends Component {
   constructor(){
     super();
@@ -32,7 +33,9 @@ class Post extends Component {
     return(
       <div>
         { content }
-        <div dangerouslySetInnerHTML={{__html: content }} />
+        <div className="post-content">
+            <span div dangerouslySetInnerHTML={{__html: content }}></span>
+        </div>
       </div>
     )
   }
